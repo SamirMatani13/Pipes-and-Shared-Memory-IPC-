@@ -6,7 +6,7 @@ This repository contains two C programs designed for measuring the time elapsed 
 
 ### 1. Pipe-Based Time Measurement Program
 
-**Filename:** `time_measurement_pipe.c`
+**Filename:** `time-pipe.c`
 
 This program uses UNIX pipes for inter-process communication. It involves creating a pipe, forking a child process, and then using the pipe to communicate the child's timestamp to the parent process. After the parent process receives this timestamp, it calculates the elapsed time since the child process started.
 
@@ -18,7 +18,7 @@ This program uses UNIX pipes for inter-process communication. It involves creati
 
 ### 2. Shared Memory-Based Time Measurement Program
 
-**Filename:** `time_measurement_shm.c`
+**Filename:** `time-shm.c`
 
 This program utilizes POSIX shared memory for inter-process communication. It creates a shared memory segment, forks a child process, and then uses the shared memory to communicate the child's timestamp to the parent process. The parent process calculates the elapsed time after retrieving the child's timestamp from the shared memory.
 
